@@ -10,7 +10,6 @@
     "dev": "nodemon ./src/server.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "build": "tsc --build",
     "prepare": "husky"
   },
   "author": "Tenzin",
