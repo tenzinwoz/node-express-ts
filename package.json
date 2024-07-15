@@ -8,12 +8,18 @@
     "dist": "npx tsc",
     "start": "node ./dist/server.js",
     "dev": "nodemon ./src/server.ts",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "build": "tsc --build",
     "prepare": "husky"
   },
   "author": "Tenzin",
   "license": "ISC",
+  "lint-staged": {
+    "*.ts": [
+      "npm run lint:fix"
+    ]
+  },
   "dependencies": {
     "express": "^4.19.2",
     "winston": "^3.13.1"
