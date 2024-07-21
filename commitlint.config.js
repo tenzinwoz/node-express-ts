@@ -1,3 +1,4 @@
+// Keep the module.export for commitlint to work
 module.exports = {
     extends: ['@commitlint/config-conventional', '@commitlint/cli'],
     rules: {
