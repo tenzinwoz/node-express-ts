@@ -1,4 +1,4 @@
-const commitConfig = {
+module.exports = {
     extends: ['@commitlint/config-conventional', '@commitlint/cli'],
     rules: {
         'type-enum': [2, 'always', ['feat', 'fix', 'chore', 'docs', 'style', 'refactor', 'perf', 'test', 'revert']],
@@ -6,6 +6,4 @@ const commitConfig = {
         'subject-case': [2, 'always', 'sentence-case']
     }
 }
-
-export default commitConfig
 
