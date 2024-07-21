@@ -6,7 +6,6 @@ const commitConfig = {
         'subject-case': [2, 'always', 'sentence-case']
     }
 }
-console.log('Check')
 
 export default commitConfig
 
