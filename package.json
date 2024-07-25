@@ -23,6 +23,7 @@
     },
     "dependencies": {
         "@types/source-map-support": "^0.5.10",
+        "colorette": "^2.0.20",
         "dotenv-flow": "^4.1.0",
         "express": "^4.19.2",
         "source-map-support": "^0.5.21",
