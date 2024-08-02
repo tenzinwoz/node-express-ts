@@ -28,7 +28,9 @@
         "express": "^4.19.2",
         "mongoose": "^8.5.1",
         "source-map-support": "^0.5.21",
-        "winston": "^3.13.1"
+        "ts-migrate-mongoose": "^3.8.3",
+        "winston": "^3.13.1",
+        "winston-mongodb": "^5.1.1"
     },
     "devDependencies": {
         "@commitlint/cli": "^19.3.0",
@@ -48,4 +50,3 @@
         "typescript-eslint": "^7.16.0"
     }
 }
-
