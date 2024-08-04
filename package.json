@@ -11,7 +11,9 @@
         "lint:fix": "eslint --fix",
         "format:check": "prettier . --check",
         "format:fix": "prettier . --fix",
-        "prepare": "husky"
+        "prepare": "husky",
+        "migrate:dev": "MIGRATE_MODE=development node script/migrate.js",
+        "migrate:prod": "MIGRATE_MODE=production node script/migrate.js"
     },
     "author": "Tenzin",
     "license": "ISC",
@@ -50,3 +52,4 @@
         "typescript-eslint": "^7.16.0"
     }
 }
+
