@@ -4,5 +4,7 @@ const router = express.Router()
 
 router.route('/self').get(apiController.self)
 
+router.route('/health').get(apiController.heatlh)
+
 export default router
 
