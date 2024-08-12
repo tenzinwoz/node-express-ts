@@ -1,4 +1,2 @@
-. "$(dirname -- "$0")/_/husky.sh"
-
 # Run lint on staged files
 npx lint-staged
