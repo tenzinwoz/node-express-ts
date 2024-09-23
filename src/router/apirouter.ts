@@ -1,10 +1,11 @@
 import express from 'express'
-import apiController from '../controller/apiController'
+import healthRouter from './healthRouter'
+import authRouter from './authRouter'
+
 const router = express.Router()
 
-router.route('/self').get(apiController.self)
-
-router.route('/health').get(apiController.heatlh)
+router.use('/health', healthRouter)
+router.use('/auth', authRouter)
 
 export default router
 

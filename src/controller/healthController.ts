@@ -5,13 +5,6 @@ import httpError from '../utils/httpError'
 import quicker from '../utils/quicker'
 
 export default {
-    self: (req: Request, res: Response, next: NextFunction) => {
-        try {
-            httpResponse(req, res, 200, responseMessage.SUCCESS, { id: 'id' })
-        } catch (error) {
-            httpError(next, error, req, 500)
-        }
-    },
     heatlh: (req: Request, res: Response, next: NextFunction) => {
         try {
             const healthData = {

@@ -1,11 +1,13 @@
 import express, { Application, NextFunction, Request, Response } from 'express'
 import path from 'path'
-import router from './router/apirouter'
+import router from './router/apiRouter'
 import globalErrorHandler from './middleware/globalErrorHandler'
 import responseMessage from './constant/responseMessage'
 import httpError from './utils/httpError'
 import helmet from 'helmet'
 import cors from 'cors'
+import swaggerUi from 'swagger-ui-express'
+import { swaggerDocs } from './utils/swagger'
 
 const app: Application = express()
 
@@ -22,6 +24,7 @@ app.use(express.json())
 app.use(express.static(path.join(__dirname, '../', 'public')))
 
 // Routes
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 app.use('/api/v1', router)
 
 // 404 Handler
